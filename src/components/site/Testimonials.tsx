@@ -49,7 +49,7 @@ function StarRating({ rating }: { rating: number }) {
 export function Testimonials() {
   return (
     <section id="testimonios" className="py-20 md:py-28 relative">
-      <div className="absolute inset-1/2 -z-10 translate-x-[-50%] translate-y-[-50%] w-[600px] h-[600px] rounded-full bg-brand-purple/10 blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-brand-purple/10 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
@@ -75,7 +75,7 @@ export function Testimonials() {
               <div className="mt-6 pt-5 border-t border-white/10">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-gradient-brand grid place-items-center text-sm font-bold text-white">
-                    {t.name.charAt(1)}
+                    {t.name.split(" ")[1]?.charAt(1) ?? t.name.charAt(0)}
                   </div>
                   <div>
                     <p className="text-sm font-semibold">{t.name}</p>
