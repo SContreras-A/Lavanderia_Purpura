@@ -6,6 +6,7 @@ import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
 import { Products } from "@/components/site/Products";
 import { Marketplace } from "@/components/site/Marketplace";
+import { Testimonials } from "@/components/site/Testimonials";
 import { Gallery } from "@/components/site/Gallery";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -38,8 +39,9 @@ function Index() {
         <Hero />
         <About />
         <Services />
-        <Products onAdd={addToCart} />
+        <Products />
         <Marketplace onAdd={addToCart} />
+        <Testimonials />
         <Gallery />
         <Contact />
       </main>
